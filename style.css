@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+
+.container.theme-2 {
+    background-color: #e6e6e6;
+}
+
+.theme-2 {
+
+    h1 {
+        color: #36362c;
+    }
+
+    .header p {
+        color: #36362c;
+    }
+
+    li {
+        color: #36362c;
+    }
+
+    #range {
+        background-color: #d2cdcd;
+    }
+
+    #range::-webkit-slider-thumb {
+        background-color: #c85402;
+    }
+
+    #range::-webkit-slider-thumb:hover {
+        background-color: #ff8a38;
+    }
+
+    .result {
+        background-color: #eee;
+    }
+       
+    .calculator {
+        background-color: #d2cdcd;
+    }
+
+    .result-num {
+        color: #36362c;
+    }    
+
+    .number {
+        box-shadow: inset 0 -4px 0 0 #a79e91;
+        background-color: #e5e4e1;
+    }
+
+    .number:hover {
+        background-color: #fff;
+    }
+
+    .delete {
+        box-shadow: inset 0 -4px 0 0 #1b6066;
+        background-color: #378187;
+    }
+
+    .delete:hover {
+        background-color: #62b5bc;
+    }
+
+    .count {
+        box-shadow: inset 0 -4px 0 0 #873901;
+        background-color: #c85402;
+    }
+
+    .count:hover {
+        background-color: #ff8a38;
+    }
+
+    .reset {
+        box-shadow: inset 0 -4px 0 0 #1b6066;
+        background-color: #378187;
+    }
+
+    .reset:hover {
+        background-color: #62b5bc;
+    }
+
+}
+
+.container.theme-3 {
+    background-color: #17062a;
+}
+  
+.theme-3 {
+
+    h1 {
+        color: #ffe53d;
+    }
+
+    .header p {
+        color: #ffe53d;
+    }
+
+    li {
+        color: #ffe53d;
+    }
+
+    #range {
+        background-color: #1e0936;
+    }
+
+    #range::-webkit-slider-thumb {
+        background-color: #00ded0;
+    }
+
+    #range::-webkit-slider-thumb:hover {
+        background-color: #93fff8;
+    }
+    
+    .result {
+        background-color: #1e0936;
+    }
+       
+    .calculator {
+        background-color: #1e0936;
+    }
+
+    .result-num {
+        color: #ffe53d;
+    }    
+
+    .number {
+        box-shadow: inset 0 -4px 0 0 #881c9e;
+        background-color: #331c4d;
+        color: #ffe53d;
+    }
+
+    .number:hover {
+        background-color: #6c34ac;
+    }
+
+    .delete {
+        box-shadow: inset 0 -4px 0 0 #be15f4;
+        background-color: #56077c;
+        color: #fff;
+    }
+
+    .delete:hover {
+        background-color: #8631af;
+    }
+
+    .count {
+        box-shadow: inset 0 -4px 0 0 #6cf9f1;
+        background-color: #00ded0;
+        color: #1a2327;
+    }
+
+    .count:hover {
+        background-color: #93fff8;
+    }
+
+    .reset {
+        box-shadow: inset 0 -4px 0 0 #be15f4;
+        background-color: #56077c;
+    }
+
+    .reset:hover {
+        background-color: #8631af;
+    }
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 375px;
+    height: 667px;
+    padding: 30px 24px 31px;
+    background-color: #3a4663;
+}
+
+.header {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.theme {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+ul {
+    display: flex;
+    margin-left: 17px;
+}
+
+#range {
+    appearance: none;
+    height: 20px;
+    background: #242d44;
+    border-radius: 13px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    outline: none;
+    margin: 0px;
+    width: 64px;
+    margin-top: 5px;
+    margin-left: 15px;
+    padding: 0 3px 0 3px;
+    cursor: pointer;
+}
+
+#range::-webkit-slider-thumb {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: var(--thumb-background-color, #d03f2f);
+    border-radius: 50%;
+}
+
+#range::-webkit-slider-thumb:hover {
+    background-color: #f96b5b;
+}
+
+h1 {
+    width: 52px;
+    height: 29px;
+    margin: 10px 129px 3px 0;
+    font-family: League Spartan;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: -0.53px;
+    text-align: center;
+    color: #fff;
+}
+
+.header p {
+    width: 41px;
+    height: 11px;
+    margin: 26px 26px 5px 0;
+    font-family: League Spartan;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #fff;
+}
+
+li {
+    width: 12px;
+    height: 11px;
+    font-family: League Spartan;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+.one {
+    margin: 0 11px 5px 0;
+}
+
+.two {
+    margin: 0 11px 5px 0;
+}
+
+.three {
+    margin: 0 0 5px;
+}
+
+.result {
+    border-radius: 10px;
+    width: 327px;
+    height: 88px;
+    margin: 32px 0 24px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 10px 24px;
+    background: #181f33;
+}
+  
+.result-num {
+    font-size: 40px;
+    line-height: 37px;
+    text-align: right;
+    letter-spacing: -0.666667px;
+    font-family: League Spartan;
+    color: #fff;
+    max-width: 100%;
+    margin-top: 12px;
+    overflow: hidden;
+}
+
+button {
+    cursor: pointer;
+}
+
+.number {
+    width: 60px;
+    height: 64px;
+    padding: 13px 10px 11px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset 0 -4px 0 0 #b3a497;
+    background-color: #eae3dc;
+    font-family: League Spartan;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: -0.53px;
+    text-align: center;
+    color: #434a59;
+}
+
+.number:hover {
+    background-color: #fffffe;
+}
+
+.delete {
+    width: 60px;
+    height: 64px;
+    padding: 12px 10px;
+    border-radius: 5px;
+    box-shadow: inset 0 -4px 0 0 #414e73;
+    background-color: #647198;
+    border: none;
+    font-family: League Spartan;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: -0.33px;
+    text-align: center;
+    color: #fff;
+}
+
+.delete:hover {
+    background-color: #a2b2e1;
+}
+
+.calculator {
+    width: 327px;
+    height: 420px;
+    margin: 24px 0 0;
+    padding: 24px;
+    border-radius: 10px;
+    background-color: #242d44;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 13px;
+    column-gap: 13px;
+}
+
+.reset {
+    width: 133px;
+    height: 64px;
+    padding: 12px 22px;
+    border-radius: 5px;
+    box-shadow: inset 0 -4px 0 0 #414e73;
+    background-color: #647198;
+    border: none;
+    font-family: League Spartan;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: -0.33px;
+    text-align: center;
+    color: #fff;   
+    grid-column: 1 / span 2;   
+}
+
+.reset:hover {
+    background-color: #a2b2e1;
+}
+
+.count {
+    width: 133px;
+    height: 64px;
+    padding: 12px 22px;
+    border-radius: 5px;
+    box-shadow: inset 0 -4px 0 0 #93261a;
+    background-color: #d03f2f;   
+    border: none; 
+    font-family: League Spartan;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: -0.33px;
+    text-align: center;
+    color: #fff;
+    grid-column: 3 / span 2;
+}
+
+.count:hover {
+    background-color: #f96b5b;
+}
+
+
+@media screen and (min-width: 1440px) {
+
+    .container {
+        width: 1440px;
+        height: 900px;
+        padding: 96px 450px;
+    }
+
+    h1 {
+        margin-left: 7px;
+    }
+    
+    #range {
+        height: 26px;
+    }
+
+    .result {
+        width: 540px;
+        height: 128px;
+        padding: 24px 32px;
+    }
+      
+    .result-num {
+        font-size: 56px;
+        line-height: 56px;
+    }
+    
+    .number {
+        width: 101px;
+        padding: 13px 13px 11px 14px;
+        border-radius: 10px;
+        font-size: 40px;
+        letter-spacing: -0.67px;
+    }
+    
+    .delete {
+        width: 101px;
+        padding: 13px 13px 11px 14px;
+        border-radius: 10px;
+        font-size: 28px;
+        letter-spacing: -0.47px;
+    }
+    
+    .calculator {
+        width: 540px;
+        height: 480px;
+        padding: 32px 32px 32px 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        row-gap: 25px;
+        column-gap: 25px;
+    }
+    
+    .reset {
+        width: 227px;
+        padding: 13px 29px 11px 32px;
+        border-radius: 10px;
+        font-size: 28px;
+        letter-spacing: -0.47px; 
+        grid-column: 1 / span 2;   
+    }
+    
+    .count {
+        width: 227px;
+        padding: 13px 29px 11px 32px;
+        border-radius: 10px;
+        font-size: 28px;
+        letter-spacing: -0.47px;
+        grid-column: 3 / span 2;
+    }
+}

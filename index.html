@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="images/favicon-32x32.png">
+    <title>calculator-app</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>calc</h1>
+            <div class="theme">
+                <p class="theme">THEME</p>
+                <div class="right-side">
+                    <ul>
+                        <li class="one">1</li>
+                        <li class="two">2</li>
+                        <li class="three">3</li>
+                    </ul>
+                    <input type="range" min="1" max="3" value="1" id="range" />
+                </div>
+            </div>
+        </div>
+        <section class="result">
+            <p class="result-num">0</p>
+        </section>
+        <section class="calculator">
+            <button class="number" data-value="7">7</button>
+            <button class="number" data-value="8">8</button>
+            <button class="number" data-value="9">9</button>
+            <button class="operator delete" data-value="DEL">DEL</button>
+            <button class="number" data-value="4">4</button>
+            <button class="number" data-value="5">5</button>
+            <button class="number" data-value="6">6</button>
+            <button class="operator number" data-value="+">+</button>
+            <button class="number" data-value="1">1</button>
+            <button class="number" data-value="2">2</button>
+            <button class="number" data-value="3">3</button>
+            <button class="operator number" data-value="-">-</button>
+            <button class="whole number" data-value=".">.</button>
+            <button class="number" data-value="0">0</button>
+            <button class="operator number" data-value="/">/</button>
+            <button class="operator number" data-value="*">x</button>
+            <button class="reset" data-value="RESET">RESET</button>
+            <button class="count" data-value="=">=</button>
+        </section>
+    </div>
+</body>
+</html>
